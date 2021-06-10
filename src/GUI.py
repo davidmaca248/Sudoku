@@ -86,27 +86,6 @@ class GUI:
                     btn['state'] = "disabled"
                 else:
                     btn['text'] = ""
-
-        # # board buttons
-        # self.boardBtns = []
-        # for r in range(9):
-        #     btnRow = []
-        #     for c in range(9):
-        #         # get button text
-        #         txt = self.board.getCoordinate(r+1,c+1)
-
-        #         btn = Button(self.root,text=str(txt),padx=10,pady=10,command=lambda row=r,col=c:self.boardClick(row,col))        
-
-        #         # disable button if there was already a number on it
-        #         if(txt != -1):
-        #             btn['state'] = "disabled"
-        #         else:
-        #             btn['text'] = ""
-
-        #         btn.grid(row=r+1,column=c)
-        #         btnRow.append(btn)
-
-        #     self.boardBtns.append(btnRow)
             
         # msg label text
         self.msgLabel['text'] = "Click box to change"
